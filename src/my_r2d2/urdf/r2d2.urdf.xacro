@@ -28,6 +28,14 @@
     </inertial>
   </xacro:macro>
 
+  <link name="base_footprint">
+  </link>
+
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
   <link name="base_link">
     <visual>
       <geometry>
